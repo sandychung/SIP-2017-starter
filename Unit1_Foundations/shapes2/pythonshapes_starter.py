@@ -11,9 +11,11 @@ y_pos = -150
 t.setposition(x_pos, y_pos)
 
 ### Write your code below:
-
-
-
+sides = 8
+x = 360/sides
+for i in range(sides):
+    t.forward (50)
+    t.right (x)
 
 
 
