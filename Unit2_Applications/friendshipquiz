@@ -1,0 +1,24 @@
+var questionsList = ["What are your friend's favorite foods?", "What are your friend's favorite animals?"];
+function init() {
+  var randomIndex = Math.floor(Math.random() * questionsList.length);
+  document.getElementById("question").innerHTML = questionsList[randomIndex];
+}
+
+window.onload = init;
+
+var answerList = [];
+function submitAnswer() {
+  var answer = document.getElementById("answerInput").value;
+  console.log(answer)
+  answerList.push(answer);
+  console.log(answerList);
+}
+
+function checkGuess() {
+  var guess = document.getElementById("guessInput").value;
+  for (var i = 0; i < answerList.length; i++) {
+    if (guess == answerList[i]){
+      console.log("true")
+    }
+  }
+}
