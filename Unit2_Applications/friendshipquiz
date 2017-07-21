@@ -17,7 +17,7 @@ function submitAnswer() {
 function checkGuess() {
   var guess = document.getElementById("guessInput").value;
   for (var i = 0; i < answerList.length; i++) {
-    if (guess == answerList[i]){
+    if (guess == answerList[i]) {
       console.log("true")
     }
   }
